@@ -1,0 +1,13 @@
+{
+  "surname": "Мандронов",
+  "name": "Егор",
+  "birthdate": "2009-05-02",
+  "group": "РПО-25.281",
+  "course": 2,
+  "studyForm": "commercial",
+  "specialty": "09.02.11 Разработка и управление программным обеспечением",
+  "phone": "+7 (999) 999-99-99",
+  "email": "zxcursedmain@example.com",
+  "login": "Zxcursed",
+  "photo": "img/avatar.png"
+}

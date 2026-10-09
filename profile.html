@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль — Личный кабинет студента НАТК</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header-logo" href="https://natk.ru">
+            <img src="img/logo.png" alt="Официальный сайт НАТК">
+        </a>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Домашнее задание</a></li>
+                <li><a class="active" href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile">
+        <h1>Профиль студента</h1>
+
+        <section class="student-card">
+            <img class="student-photo" src="img/avatar.png" alt="Фотография студента Мандронова Егора">
+            <h2>Мандронов Егор</h2>
+
+            <dl class="student-info">
+                <dt>Группа</dt>
+                <dd>РПО-25.283</dd>
+
+                <dt>Форма обучения</dt>
+                <dd>Коммерческая группа</dd>
+
+                <dt>Курс</dt>
+                <dd>2</dd>
+
+                <dt>Специальность</dt>
+                <dd>09.02.11 Разработка и управление программным обеспечением</dd>
+
+                <dt>Дата рождения</dt>
+                <dd><time datetime="02.05.2009">2 мая 2009 г.</time></dd>
+
+                <dt>Телефон</dt>
+                <dd><a href="tel:+79999999999">+7 (999) 999-99-99</a></dd>
+
+                <dt>Электронная почта</dt>
+                <dd><a href="zxcursedmain@example.com">zxcursedmain@example.com</a></dd>
+
+                <dt>Логин</dt>
+                <dd>zxcursed</dd>
+            </dl>
+        </section>
+
+        <section class="deadlines">
+            <h2>Ближайшие дедлайны</h2>
+
+            <ul class="deadline-list">
+                <li class="deadline">
+                    <article>
+                        <h3>Проектирование и разработка баз данных</h3>
+                        <p>Построение ER-диаграммы предметной области</p>
+                        <p>Преподаватель: Денисов Захар Станиславович</p>
+                        <p>Срок сдачи: <time datetime="2026-10-09">9 октября</time></p>
+                    </article>
+                </li>
+                <li class="deadline">
+                    <article>
+                        <h3>Проектирование, разработка и оптимизация веб-приложений</h3>
+                        <p>Вёрстка страниц входа, регистрации и профиля</p>
+                        <p>Преподаватель: Зиберева Анна Александровна</p>
+                        <p>Срок сдачи: <time datetime="2026-10-10">10 октября</time></p>
+                    </article>
+                </li>
+            </ul>
+
+            <a class="deadlines-all" href="#">Все задания</a>
+        </section>
+    </main>
+</body>
+
+</html>

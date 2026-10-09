@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — Личный кабинет студента НАТК</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="form-container">
+        <h1 class="form-header">Регистрация</h1>
+
+        <form class="input-container" action="profile.html" method="get">
+            <fieldset>
+                <legend>Личные данные</legend>
+
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" name="surname" placeholder="Введите фамилию"
+                    autocomplete="family-name" required>
+
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите имя"
+                    autocomplete="given-name" required>
+
+                <label for="birthdate">Дата рождения</label>
+                <input type="date" id="birthdate" name="birthdate" autocomplete="bday" required>
+
+                <label for="group">Группа</label>
+                <input type="text" id="group" name="group" placeholder="Например, ПР-24.201"
+                    pattern="[А-ЯЁ]{2,4}-\d{2}\.\d{3}" title="Формат номера группы: РПО-25.281" required>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (900) 000-00-00" autocomplete="tel">
+            </fieldset>
+
+            <fieldset>
+                <legend>Форма обучения</legend>
+
+                <label>
+                    <input type="radio" name="study-form" value="budget" checked>
+                    Бюджетная группа
+                </label>
+
+                <label>
+                    <input type="radio" name="study-form" value="commercial">
+                    Коммерческая группа
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Данные для входа</legend>
+
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.ru"
+                    autocomplete="email" required>
+
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" placeholder="Придумайте логин"
+                    autocomplete="username" minlength="4" required>
+
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Придумайте пароль"
+                    autocomplete="new-password" minlength="6" required>
+
+                <label for="confirm-password">Подтвердите пароль</label>
+                <input type="password" id="confirm-password" name="confirm-password"
+                    placeholder="Введите пароль ещё раз" autocomplete="new-password" minlength="6" required>
+            </fieldset>
+
+            <label class="agreement">
+                <input type="checkbox" name="agreement" required>
+                Я даю согласие на обработку персональных данных
+            </label>
+
+            <button class="submit" type="submit">Зарегистрироваться</button>
+
+            <p class="signup">Уже есть аккаунт? <a href="index.html">Войти</a></p>
+        </form>
+    </main>
+</body>
+
+</html>
