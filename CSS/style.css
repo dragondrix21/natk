@@ -261,3 +261,193 @@ legend {
 .deadlines-all {
   font-weight: 600;
 }
+.grades,
+.schedule {
+  max-width: 70rem;
+  margin: var(--space-l) auto;
+  padding: 0 var(--space-l);
+}
+
+.grades h1 {
+  margin-bottom: var(--space-m);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border: 1px solid var(--color-accent);
+}
+
+caption {
+  padding: var(--space-m);
+  text-align: left;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: var(--space-s) var(--space-m);
+  border-bottom: 1px solid var(--color-accent);
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background: var(--color-bg);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--color-bg);
+}
+.grades-table tbody th {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.grades-table thead th:last-child,
+.grades-table td:last-child {
+  width: 10rem;
+  text-align: center;
+}
+
+.grade-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.average {
+  font-weight: 700;
+}
+
+.grades-table tfoot th,
+.grades-table tfoot td {
+  background: var(--color-bg);
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.grades-table tfoot th {
+  text-align: right;
+}
+.grade {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.25rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 0.25rem;
+  background: var(--color-bg);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.grade[value="5"],
+.grade[value="4"] {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.grade[value="2"] {
+  border-color: var(--color-danger);
+  background: var(--color-danger);
+  color: var(--color-surface);
+}
+.day-table th:first-child {
+  width: 45%;
+}
+
+.day-table thead th:last-child,
+.day-table td:last-child {
+  width: 6rem;
+  text-align: center;
+}
+
+.day-table tbody th {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.lesson-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.day-table td {
+  font-size: 0.875rem;
+}
+
+.day.today h2 {
+  color: var(--color-primary);
+}
+.page-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+  margin-bottom: var(--space-m);
+}
+
+.date-picker {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.date-picker label {
+  margin-top: 0;
+}
+
+.date-picker input {
+  width: auto;
+  height: 2.5rem;
+}
+.day-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+  margin-bottom: var(--space-s);
+}
+
+.day-head h2 {
+  text-align: center;
+}
+
+.day-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+a.day-arrow {
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+a.day-arrow:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.carousel {
+  display: flex;
+  gap: var(--space-m);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.day {
+  flex: 0 0 100%;
+}

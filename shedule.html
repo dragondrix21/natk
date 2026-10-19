@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание — Личный кабинет студента НАТК</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a class="header-logo" href="https://natk.ru">
+      <img src="assets/logo.svg" alt="Официальный сайт НАТК">
+    </a>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a class="active" href="schedule.html">Расписание</a></li>
+        <li><a href="grades.html">Оценки</a></li>
+        <li><a href="profile.html">Профиль</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main class="schedule">
+    <header class="page-head">
+      <h1>Расписание</h1>
+
+      <div class="date-picker">
+        <label for="schedule-date">Дата</label>
+        <input type="date" id="schedule-date" name="date" value="2026-10-09" min="2026-10-08" max="2026-10-09">
+      </div>
+    </header>
+        <section class="carousel" aria-label="Расписание по дням">
+      <article class="day" id="day-2026-10-08">
+        <header class="day-head">
+          <span class="day-arrow" aria-hidden="true"></span>
+          <h2 id="day-title-2026-10-08">
+            Четверг, <time datetime="2026-10-08">8 октября</time>
+          </h2>
+          <a class="day-arrow" href="#day-2026-10-09"
+             aria-label="Следующий день: пятница, 9 октября">→</a>
+        </header>
+                <table class="day-table" aria-labelledby="day-title-2026-10-08">
+          <thead>
+            <tr>
+              <th scope="col">Дисциплина</th>
+              <th scope="col">Задание</th>
+              <th scope="col">Оценка</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">
+                <p class="lesson-title">Операционные системы</p>
+                <p>
+                  <time datetime="08:30">8:30</time> - <time datetime="10:05">10:05</time>
+                  ауд. 118
+                </p>
+                <p>Соколов И. П.</p>
+              </th>
+              <td>
+                <p><a href="https://moodle.natk.ru">Отчёт «Управление процессами»</a></p>
+                <p>Срок сдачи: <time datetime="2026-10-12">12 октября</time></p>
+              </td>
+              <td><data class="grade" value="3">3</data></td>
+            </tr>
+            <!-- Фрагмент: класс today и aria-current="date" -->
+<article class="day today" id="day-2026-10-09" aria-current="date">
